@@ -8,7 +8,7 @@ export default function AirConditionerServicePage() {
   const services: Record<'residential' | 'commercial', { title: string; description: string; icon: string; features: string[] }[]> = {
     residential: [
       {
-        title: "AC Installation",
+        title: "AC Installation.",
         description: "Professional installation of split, window, and central AC units with proper sizing and positioning",
         icon: "🏠",
         features: ["Free consultation", "Energy efficiency assessment", "Warranty included", "Same-day service"]
