@@ -127,11 +127,8 @@ export default function ContactUsPage() {
           </div>
         </div>
 
-        {/* Contact Form Section */}
         <div className="mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">Send Us a Message</h2>
-          
-          {/* Tab Navigation */}
           <div className="flex justify-center mb-8">
             <div className="bg-gray-100 rounded-lg p-1 flex">
               <button 

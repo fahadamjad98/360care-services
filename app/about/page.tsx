@@ -186,12 +186,12 @@ export default function AboutPage() {
             maintain your property with our comprehensive maintenance solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300 transform hover:scale-105">
+            {/* <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300 transform hover:scale-105">
               Get Free Quote
             </button>
             <button className="bg-white hover:bg-gray-50 text-blue-600 px-8 py-3 rounded-lg font-semibold border-2 border-blue-600 transition-colors duration-300 transform hover:scale-105">
               Call Us Now
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

@@ -130,7 +130,7 @@ export default function HeroBanner() {
             <div className="relative">
               {/* Subtle pulsing glow background */}
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-xl opacity-40 animate-pulse blur-sm"></div>
-              <a href="tel:+1234567890" className="w-full block">
+              <a href="tel:+971585671289" className="w-full block">
                 <button className="relative flex items-center justify-center gap-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 px-8 py-4 rounded-xl text-lg group w-full">
                   <Phone className="w-6 h-6 group-hover:animate-bounce" />
                   <span>Call Now</span>

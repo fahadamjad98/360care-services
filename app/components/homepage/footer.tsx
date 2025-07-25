@@ -84,14 +84,14 @@ const Footer360Care = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">123 Service Street</p>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">Your City, State 12345</p>
+                  {/* <p className="text-gray-600 dark:text-gray-300 text-sm">123 Service Street</p> */}
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">Bay Square, Business Bay</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0" />
                 <a href="tel:+1234567890" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">
-                  (123) 456-7890
+                +971585671289
                 </a>
               </div>
               <div className="flex items-center space-x-3">
