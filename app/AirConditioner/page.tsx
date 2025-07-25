@@ -1,51 +1,92 @@
-"use client"
-import React, { useState } from 'react';
+"use client";
+import React, { useState } from "react";
 import { title } from "@/components/primitives";
 
 export default function AirConditionerServicePage() {
-  const [activeTab, setActiveTab] = useState<'residential' | 'commercial'>('residential');
+  const [activeTab, setActiveTab] = useState<"residential" | "commercial">(
+    "residential"
+  );
 
-  const services: Record<'residential' | 'commercial', { title: string; description: string; icon: string; features: string[] }[]> = {
+  const services: Record<
+    "residential" | "commercial",
+    { title: string; description: string; icon: string; features: string[] }[]
+  > = {
     residential: [
       {
         title: "AC Installation.",
-        description: "Professional installation of split, window, and central AC units with proper sizing and positioning",
+        description:
+          "Professional installation of split, window, and central AC units with proper sizing and positioning",
         icon: "🏠",
-        features: ["Free consultation", "Energy efficiency assessment", "Warranty included", "Same-day service"]
+        features: [
+          "Free consultation",
+          "Energy efficiency assessment",
+          "Warranty included",
+          "Same-day service",
+        ],
       },
       {
         title: "AC Repair",
-        description: "Expert diagnosis and repair of all AC issues including cooling problems, electrical faults, and mechanical failures",
+        description:
+          "Expert diagnosis and repair of all AC issues including cooling problems, electrical faults, and mechanical failures",
         icon: "🔧",
-        features: ["24/7 emergency repair", "Genuine parts only", "Quick diagnosis", "Transparent pricing"]
+        features: [
+          "24/7 emergency repair",
+          "Genuine parts only",
+          "Quick diagnosis",
+          "Transparent pricing",
+        ],
       },
       {
         title: "AC Maintenance",
-        description: "Regular maintenance packages to keep your AC running efficiently and prevent costly breakdowns",
+        description:
+          "Regular maintenance packages to keep your AC running efficiently and prevent costly breakdowns",
         icon: "🛠️",
-        features: ["Monthly/quarterly plans", "Filter cleaning/replacement", "Coil cleaning", "Performance optimization"]
-      }
+        features: [
+          "Monthly/quarterly plans",
+          "Filter cleaning/replacement",
+          "Coil cleaning",
+          "Performance optimization",
+        ],
+      },
     ],
     commercial: [
       {
         title: "Central AC Systems",
-        description: "Installation, maintenance, and repair of large-scale commercial HVAC systems for offices and retail spaces",
+        description:
+          "Installation, maintenance, and repair of large-scale commercial HVAC systems for offices and retail spaces",
         icon: "🏢",
-        features: ["System design", "Energy audits", "Preventive maintenance", "Emergency response"]
+        features: [
+          "System design",
+          "Energy audits",
+          "Preventive maintenance",
+          "Emergency response",
+        ],
       },
       {
         title: "VRF Systems",
-        description: "Variable Refrigerant Flow systems for multi-zone commercial buildings with precise temperature control",
+        description:
+          "Variable Refrigerant Flow systems for multi-zone commercial buildings with precise temperature control",
         icon: "🎯",
-        features: ["Multi-zone control", "Energy efficient", "Quiet operation", "Advanced diagnostics"]
+        features: [
+          "Multi-zone control",
+          "Energy efficient",
+          "Quiet operation",
+          "Advanced diagnostics",
+        ],
       },
       {
         title: "Duct Cleaning",
-        description: "Professional duct cleaning and sanitization services for improved air quality and system efficiency",
+        description:
+          "Professional duct cleaning and sanitization services for improved air quality and system efficiency",
         icon: "💨",
-        features: ["HEPA filtration", "Antimicrobial treatment", "Before/after inspection", "Health compliance"]
-      }
-    ]
+        features: [
+          "HEPA filtration",
+          "Antimicrobial treatment",
+          "Before/after inspection",
+          "Health compliance",
+        ],
+      },
+    ],
   };
 
   return (
@@ -54,30 +95,41 @@ export default function AirConditionerServicePage() {
       <div className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-700 text-white">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-cyan-600/20"></div>
-        
+
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full animate-pulse"></div>
           <div className="absolute top-32 right-20 w-16 h-16 bg-cyan-300/20 rounded-full animate-bounce"></div>
           <div className="absolute bottom-20 left-1/4 w-24 h-24 bg-blue-300/10 rounded-full animate-pulse"></div>
         </div>
-        
+
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <div className="text-6xl mb-6">❄️</div>
-            <h1 className={`${title()} text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-cyan-100 bg-clip-text text-transparent`}>
+            <h1
+              className={`${title()} text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-cyan-100 bg-clip-text text-transparent`}
+            >
               Air Conditioner Services
             </h1>
             <p className="text-xl md:text-2xl text-cyan-100 max-w-3xl mx-auto leading-relaxed mb-8">
-              Beat Dubai's heat with our expert AC installation, repair, and maintenance services
+              Beat Dubai's heat with our expert AC installation, repair, and
+              maintenance services
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white hover:bg-gray-100 text-blue-600 px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://wa.me/+971585671289?text=Hi%2C%20I%20need%20an%20emergency%20Air%20Conditioner%20Services%20at%20my%20location.",
+                    "_blank"
+                  )
+                }
+                className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+              >
                 Emergency AC Repair
               </button>
-              <button className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+              {/* <button className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
                 Free Quote
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
@@ -88,9 +140,12 @@ export default function AirConditionerServicePage() {
         <div className="bg-gradient-to-r from-red-500 to-orange-500 rounded-2xl p-8 text-white mb-16">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-4">Dubai's Extreme Climate</h2>
+              <h2 className="text-3xl font-bold mb-4">
+                Dubai's Extreme Climate
+              </h2>
               <p className="text-lg mb-4">
-                With temperatures soaring above 45°C (113°F) in summer, your AC isn't just comfort—it's essential for health and productivity.
+                With temperatures soaring above 45°C (113°F) in summer, your AC
+                isn't just comfort—it's essential for health and productivity.
               </p>
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div className="bg-white/20 rounded-lg p-4">
@@ -105,34 +160,38 @@ export default function AirConditionerServicePage() {
             </div>
             <div className="text-center">
               <div className="text-8xl mb-4">🌡️</div>
-              <div className="text-xl font-semibold">Don't let the heat win</div>
+              <div className="text-xl font-semibold">
+                Don't let the heat win
+              </div>
             </div>
           </div>
         </div>
 
         {/* Service Categories */}
         <div className="mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">Our AC Services</h2>
-          
+          <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
+            Our AC Services
+          </h2>
+
           {/* Tab Navigation */}
           <div className="flex justify-center mb-8">
             <div className="bg-gray-100 rounded-lg p-1 flex">
-              <button 
-                onClick={() => setActiveTab('residential')}
+              <button
+                onClick={() => setActiveTab("residential")}
                 className={`px-6 py-2 rounded-md font-semibold transition-all duration-300 ${
-                  activeTab === 'residential' 
-                    ? 'bg-blue-600 text-white shadow-lg' 
-                    : 'text-gray-600 hover:text-blue-600'
+                  activeTab === "residential"
+                    ? "bg-blue-600 text-white shadow-lg"
+                    : "text-gray-600 hover:text-blue-600"
                 }`}
               >
                 Residential
               </button>
-              <button 
-                onClick={() => setActiveTab('commercial')}
+              <button
+                onClick={() => setActiveTab("commercial")}
                 className={`px-6 py-2 rounded-md font-semibold transition-all duration-300 ${
-                  activeTab === 'commercial' 
-                    ? 'bg-blue-600 text-white shadow-lg' 
-                    : 'text-gray-600 hover:text-blue-600'
+                  activeTab === "commercial"
+                    ? "bg-blue-600 text-white shadow-lg"
+                    : "text-gray-600 hover:text-blue-600"
                 }`}
               >
                 Commercial
@@ -143,13 +202,21 @@ export default function AirConditionerServicePage() {
           {/* Service Cards */}
           <div className="grid md:grid-cols-3 gap-8">
             {services[activeTab].map((service, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 transform hover:-translate-y-1">
+              <div
+                key={index}
+                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 transform hover:-translate-y-1"
+              >
                 <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  {service.title}
+                </h3>
                 <p className="text-gray-600 mb-4">{service.description}</p>
                 <div className="space-y-2">
                   {service.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-center text-sm text-gray-500">
+                    <div
+                      key={idx}
+                      className="flex items-center text-sm text-gray-500"
+                    >
                       <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
                       {feature}
                     </div>
@@ -162,33 +229,40 @@ export default function AirConditionerServicePage() {
 
         {/* Common AC Problems */}
         <div className="mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">Common AC Problems in Dubai</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">
+            Common AC Problems in Dubai
+          </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 problem: "Not Cooling",
                 cause: "Refrigerant leak, dirty filters, or compressor issues",
-                icon: "🔥"
+                icon: "🔥",
               },
               {
                 problem: "High Electricity Bills",
                 cause: "Poor maintenance, old unit, or incorrect sizing",
-                icon: "💰"
+                icon: "💰",
               },
               {
                 problem: "Strange Noises",
                 cause: "Loose parts, worn bearings, or debris in unit",
-                icon: "🔊"
+                icon: "🔊",
               },
               {
                 problem: "Water Leakage",
                 cause: "Clogged drain, damaged pan, or installation issues",
-                icon: "💧"
-              }
+                icon: "💧",
+              },
             ].map((item, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-md border-l-4 border-red-500">
+              <div
+                key={index}
+                className="bg-white rounded-lg p-6 shadow-md border-l-4 border-red-500"
+              >
                 <div className="text-3xl mb-3">{item.icon}</div>
-                <h3 className="font-semibold text-gray-900 mb-2">{item.problem}</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">
+                  {item.problem}
+                </h3>
                 <p className="text-sm text-gray-600">{item.cause}</p>
               </div>
             ))}
@@ -196,7 +270,7 @@ export default function AirConditionerServicePage() {
         </div>
 
         {/* Maintenance Packages */}
-        <div className="mb-16">
+        {/* <div className="mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">Maintenance Packages</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -265,22 +339,37 @@ export default function AirConditionerServicePage() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Emergency Service */}
         <div className="bg-gradient-to-r from-red-600 to-orange-600 rounded-2xl p-8 text-white mb-16">
           <div className="text-center">
             <div className="text-6xl mb-4">🚨</div>
-            <h2 className="text-3xl font-bold mb-4">24/7 Emergency AC Repair</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              24/7 Emergency AC Repair
+            </h2>
             <p className="text-lg mb-6 max-w-2xl mx-auto">
-              AC breakdown in Dubai's heat? We're here to help! Our emergency team responds within 30 minutes with fully equipped vans.
+              AC breakdown in Dubai's heat? We're here to help! Our emergency
+              team responds within 30 minutes with fully equipped vans.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white hover:bg-gray-100 text-red-600 px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+              <button
+                onClick={() => (window.location.href = "tel:+971585671289")}
+                className="bg-white hover:bg-gray-100 text-red-600 px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+              >
                 Call Emergency Line
               </button>
-              <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
-                WhatsApp Us
+
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://wa.me/+971585671289?text=Hi%2C%20I%20need%20an%20emergency%20Air%20Conditioner%20Services%20at%20my%20location.",
+                    "_blank"
+                  )
+                }
+                className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+              >
+                Whatsapp Us
               </button>
             </div>
           </div>
@@ -288,23 +377,26 @@ export default function AirConditionerServicePage() {
 
         {/* Contact Section */}
         <div className="text-center bg-gray-50 rounded-2xl p-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Ready to Cool Down?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Ready to Cool Down?
+          </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Don't let Dubai's heat get the best of you. Contact us today for professional AC services that keep you comfortable all year round.
+            Don't let Dubai's heat get the best of you. Contact us today for
+            professional AC services that keep you comfortable all year round.
           </p>
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div className="flex items-center justify-center space-x-3">
               <div className="text-2xl">📞</div>
               <div>
                 <div className="font-semibold">Call Us</div>
-                <div className="text-gray-600">+971 XX XXX XXXX</div>
+                <div className="text-gray-600">+971585671289</div>
               </div>
             </div>
             <div className="flex items-center justify-center space-x-3">
               <div className="text-2xl">📱</div>
               <div>
                 <div className="font-semibold">WhatsApp</div>
-                <div className="text-gray-600">+971 XX XXX XXXX</div>
+                <div className="text-gray-600">+971585671289</div>
               </div>
             </div>
             <div className="flex items-center justify-center space-x-3">

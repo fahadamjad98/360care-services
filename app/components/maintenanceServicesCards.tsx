@@ -14,45 +14,45 @@ const MaintenanceServicesCards = () => {
   const services = [
     {
       id: 1,
-      title: 'Painting',
+      title: 'Plumbing Services',
       icon: <Paintbrush className="w-8 h-8" />,
       image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=400&h=300&fit=crop',
-      description: 'Interior & Exterior Painting'
+      description: 'Plumbing Installations & Repairs'
     },
     {
       id: 2,
-      title: 'Air Conditioner',
+      title: 'Electrical Work',
       icon: <Wind className="w-8 h-8" />,
       image: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=400&h=300&fit=crop',
-      description: 'Heating & Air Conditioning'
+      description: 'Wiring & Electrical Repairs '
     },
     {
       id: 3,
-      title: 'Plumbing',
+      title: 'Air Conditioning',
       icon: <Wrench className="w-8 h-8" />,
       image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop',
-      description: 'Pipe & Fixture Repairs'
+      description: 'Air Conditioning Installation & Maintenance'
     },
     {
       id: 4,
-      title: 'Water Heater',
+      title: 'Appliance Repair',
       icon: <Flame className="w-8 h-8" />,
       image: 'https://images.unsplash.com/photo-1558882224-dda166733046?w=400&h=300&fit=crop',
       description: 'Installation & Maintenance'
     },
     {
       id: 5,
-      title: 'Electrical',
+      title: 'Cleaning',
       icon: <Zap className="w-8 h-8" />,
       image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=400&h=300&fit=crop',
-      description: 'Wiring & Electrical Repairs'
+      description: 'General Cleaning Services'
     },
     {
       id: 6,
-      title: 'Home Repair',
+      title: 'Painting',
       icon: <Home className="w-8 h-8" />,
       image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=300&fit=crop',
-      description: 'General Home Maintenance'
+      description: 'Interior & Exterior Painting'
     }
   ];
 
