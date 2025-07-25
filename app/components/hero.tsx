@@ -207,9 +207,9 @@ export default function HeroBanner() {
             <p className="mb-6 opacity-90 text-lg">
               Join thousands of satisfied customers
             </p>
-            <button className="bg-white text-blue-600 font-bold hover:bg-gray-50 shadow-xl px-6 py-3 rounded-xl transition-all duration-300 hover:scale-105">
+            {/* <button className="bg-white text-blue-600 font-bold hover:bg-gray-50 shadow-xl px-6 py-3 rounded-xl transition-all duration-300 hover:scale-105">
               Book Service Now
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

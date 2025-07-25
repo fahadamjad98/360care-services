@@ -25,7 +25,7 @@ export function Providers({ children, themeProps }: ProvidersProps) {
 
   return (
     <HeroUIProvider navigate={router.push}>
-      <NextThemesProvider defaultTheme="light" {...themeProps}>{children}</NextThemesProvider>
+      <NextThemesProvider defaultTheme="light" enableSystem={false} {...themeProps}>{children}</NextThemesProvider>
     </HeroUIProvider>
   );
 }
