@@ -35,7 +35,7 @@ const Footer360Care = () => {
               Your trusted partner for comprehensive home maintenance and repair services. 
               We provide reliable, professional solutions for all your property needs.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
@@ -48,24 +48,24 @@ const Footer360Care = () => {
               <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Services */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Our Services</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">Plumbing Services</a></li>
-              <li><a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">Electrical Repairs</a></li>
-              <li><a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">HVAC Maintenance</a></li>
-              <li><a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">Painting Services</a></li>
-              <li><a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">Water Heater Repair</a></li>
-              <li><a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">General Maintenance</a></li>
+              <li><a href="/PlumbingService" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">Plumbing Services</a></li>
+              <li><a href="/ElectricalService" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">Electrical Repairs</a></li>
+              <li><a href="/AirConditioner" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">AC Maintenance</a></li>
+              <li><a href="/PaintingService" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">Painting Services</a></li>
+              <li><a href="/ApplianceRepairService" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">Appliance Repair</a></li>
+              <li><a href="/CleaningService" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">Cleaning Service</a></li>
             </ul>
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Quick Links</h4>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">About Us</a></li>
@@ -75,7 +75,7 @@ const Footer360Care = () => {
               <li><a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">Get Quote</a></li>
               <li><a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">Testimonials</a></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact Info */}
           <div className="space-y-4">
@@ -90,7 +90,7 @@ const Footer360Care = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0" />
-                <a href="tel:+1234567890" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">
+                <a href="tel:+971585671289" className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm">
                 +971585671289
                 </a>
               </div>
@@ -146,7 +146,7 @@ const Footer360Care = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-300 dark:border-gray-700 bg-gray-200 dark:bg-gray-950">
+      {/* <div className="border-t border-gray-300 dark:border-gray-700 bg-gray-200 dark:bg-gray-950">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
             <p className="text-gray-600 dark:text-gray-400 text-sm">
@@ -165,7 +165,7 @@ const Footer360Care = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 };
