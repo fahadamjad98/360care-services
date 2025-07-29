@@ -64,7 +64,7 @@ export default function HeroBanner() {
 
   return (
     <section className="relative py-16 px-6 overflow-hidden min-h-screen flex items-center">
-      {/* Background Image */}
+     
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
