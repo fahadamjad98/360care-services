@@ -86,9 +86,12 @@ export default function ContactUsPage() {
               Ready to transform your space? Contact our expert team for professional services across Dubai
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-purple-500 hover:bg-purple-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
-                Call Now
-              </button>
+            <a href="tel:+971585671289">
+  <button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
+    <span className="mr-2">📞</span>
+    Call Now: +971585671289
+  </button>
+</a>
               <button className="bg-white hover:bg-gray-100 text-purple-600 px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
                 Get Quote
               </button>
@@ -104,8 +107,8 @@ export default function ContactUsPage() {
             <div className="text-5xl mb-4">📞</div>
             <h3 className="text-2xl font-bold mb-2">Call Us</h3>
             <p className="text-lg mb-4">24/7 Customer Support</p>
-            <div className="text-xl font-semibold">+971 50 123 4567</div>
-            <div className="text-lg">+971 4 567 8901</div>
+            <div className="text-xl font-semibold"> +971585671289</div>
+            <div className="text-lg">+971585671289</div>
           </div>
           
           <div className="bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl p-8 text-white text-center transform hover:scale-105 transition-all duration-300">
@@ -120,7 +123,7 @@ export default function ContactUsPage() {
             <div className="text-5xl mb-4">💬</div>
             <h3 className="text-2xl font-bold mb-2">WhatsApp</h3>
             <p className="text-lg mb-4">Instant Messaging</p>
-            <div className="text-xl font-semibold">+971 50 123 4567</div>
+            <div className="text-xl font-semibold"> +971585671289</div>
             <button className="mt-2 bg-white hover:bg-gray-100 text-purple-600 px-4 py-2 rounded-lg font-semibold transition-colors duration-300">
               Chat Now
             </button>
@@ -173,7 +176,7 @@ export default function ContactUsPage() {
                     <div className="text-2xl mr-3">🚨</div>
                     <div>
                       <h3 className="text-lg font-semibold text-red-800">Emergency Service</h3>
-                      <p className="text-red-600">For urgent issues, call us immediately at +971 50 123 4567</p>
+                      <p className="text-red-600">For urgent issues, call us immediately at  +971585671289</p>
                     </div>
                   </div>
                 </div>
@@ -420,10 +423,13 @@ export default function ContactUsPage() {
             Don't wait any longer. Contact us today for professional services that exceed your expectations. We're here to help 24/7.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
-              <span className="mr-2">📞</span>
-              Call Now: +971 50 123 4567
-            </button>
+          <a href="tel:+971585671289">
+  <button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
+    <span className="mr-2">📞</span>
+    Call Now: +971585671289
+  </button>
+</a>
+
             <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
               <span className="mr-2">💬</span>
               WhatsApp Us

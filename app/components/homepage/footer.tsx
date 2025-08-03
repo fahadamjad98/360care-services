@@ -85,7 +85,7 @@ const Footer360Care = () => {
                 <MapPin className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                 <div>
                   {/* <p className="text-gray-600 dark:text-gray-300 text-sm">123 Service Street</p> */}
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">Bay Square, Business Bay</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">Prime Business Centre - Jumeirah Village - Jumeirah Village Circle - Dubai</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
@@ -103,8 +103,8 @@ const Footer360Care = () => {
               <div className="flex items-start space-x-3">
                 <Clock className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">Mon-Fri: 8AM-6PM</p>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">Emergency: 24/7</p>
+                  {/* <p className="text-gray-600 dark:text-gray-300 text-sm">Mon-Fri: 8AM-6PM</p> */}
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">Emergency Service: 24/7</p>
                 </div>
               </div>
             </div>
