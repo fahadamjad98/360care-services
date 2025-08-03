@@ -101,7 +101,7 @@ export default function ContactUsPage() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        {/* Quick Contact Info */}
+       
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl p-8 text-white text-center transform hover:scale-105 transition-all duration-300">
             <div className="text-5xl mb-4">📞</div>
